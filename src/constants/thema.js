@@ -11,6 +11,7 @@ export const theme = {
     green: 'green',
     red: 'red',
     blue: '#55BAD2',
+    darkBlue: '#00809e',
     orange: 'orange',
     online: 'green',
     ofline: 'red',
@@ -81,6 +82,7 @@ export const theme = {
     section: '500px',
     half: '50%',
     full: '100%',
+    inputHeight: '30px',
   },
 
   shadows: {
@@ -90,6 +92,7 @@ export const theme = {
     -3px -2px 1px #dbe1ea`,
     buttonActive: `2px 2px 2px #2a2a2a`,
     normal: `1px 1px 1px grey`,
+    phoneBook: `3px 3px 1px #75d2f0, -3px -2px 1px #57dae2`,
   },
 
   text: {
