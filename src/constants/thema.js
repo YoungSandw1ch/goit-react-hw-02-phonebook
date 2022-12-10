@@ -77,8 +77,9 @@ export const theme = {
   },
 
   sizes: {
-    container: '1030px',
+    container: '1032px',
     section: '500px',
+    half: '50%',
     full: '100%',
   },
 
