@@ -74,6 +74,7 @@ export const theme = {
   radii: {
     none: '0',
     normal: '4px',
+    medium: '8px',
     round: '50%',
   },
 
@@ -82,7 +83,7 @@ export const theme = {
     section: '500px',
     half: '50%',
     full: '100%',
-    inputHeight: '30px',
+    inputHeight: '35px',
   },
 
   shadows: {

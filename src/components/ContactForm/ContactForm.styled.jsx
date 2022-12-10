@@ -5,9 +5,11 @@ export const Label = styled.label`
   color: ${({ theme }) => theme.colors.greyFontColor};
   letter-spacing: 3px;
   margin-bottom: ${({ theme }) => theme.space[4]}px;
+  transition: all 250ms linear;
 
   :focus-within {
     color: ${({ theme }) => theme.colors.darkBlue};
+    letter-spacing: 6px;
   }
 `;
 
@@ -15,13 +17,19 @@ export const Input = styled.input`
   margin-top: ${({ theme }) => theme.space[2]}px;
   width: ${({ theme }) => theme.sizes.full};
   height: ${({ theme }) => theme.sizes.inputHeight};
-  border-radius: ${({ theme }) => theme.radii.normal};
+  border-radius: ${({ theme }) => theme.radii.medium};
   border: ${({ theme }) => theme.borders.normal};
   border-color: ${({ theme }) => theme.colors.greyFontColor};
   outline: none;
+  padding-left: ${({ theme }) => theme.space[4]}px;
+  padding-right: ${({ theme }) => theme.space[4]}px;
+  font-size: ${({ theme }) => theme.fontSizes.m};
+  color: ${({ theme }) => theme.colors.fistFontColor};
+  transition: border-radius 250ms linear;
 
   :focus {
     border-color: ${({ theme }) => theme.colors.darkBlue};
+    border-radius: ${({ theme }) => theme.radii.normal};
   }
 `;
 
@@ -43,6 +51,7 @@ export const Button = styled.button`
   border: none;
   background-color: ${({ theme }) => theme.colors.darkBlue};
   color: ${({ theme }) => theme.colors.white};
+  box-shadow: ${({ theme }) => theme.shadows.normal};
 
   :hover,
   :focus {
