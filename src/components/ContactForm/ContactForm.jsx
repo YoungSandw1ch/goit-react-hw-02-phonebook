@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Box } from 'components/Common/Box';
 import { Label, Input, Button } from './ContactForm.styled';
 
-const resetState = { name: '', number: '' };
-
 export class ContactForm extends Component {
   state = {
     name: '',
@@ -14,13 +12,15 @@ export class ContactForm extends Component {
     e.preventDefault();
     const { name, number } = this.state;
     this.props.onSubmit({ name, number });
-    this.setState({ ...resetState });
+    this.resetState();
   };
 
   handleChange = e => {
     const { name, value } = e.target;
     this.setState(prev => ({ ...prev, [name]: value }));
   };
+
+  resetState = () => this.setState({ name: '', number: '' });
 
   render() {
     const { name, number } = this.state;
@@ -55,3 +55,5 @@ export class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {};

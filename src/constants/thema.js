@@ -81,9 +81,11 @@ export const theme = {
   sizes: {
     container: '1032px',
     section: '500px',
+    item: '430px',
     half: '50%',
     full: '100%',
     inputHeight: '35px',
+    contactHeight: '25px',
   },
 
   shadows: {
