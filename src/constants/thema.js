@@ -81,7 +81,8 @@ export const theme = {
   sizes: {
     container: '1032px',
     section: '500px',
-    item: '430px',
+    item: '450px',
+    contactsList: '310px',
     half: '50%',
     full: '100%',
     inputHeight: '35px',

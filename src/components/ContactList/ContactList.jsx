@@ -4,7 +4,14 @@ import { ContactItem } from 'components/ContactItem';
 
 export const ContactList = ({ contacts, onContactDelete }) => {
   return (
-    <Box as="ul" width="item" mx="auto">
+    <Box
+      as="ul"
+      width="item"
+      height="contactsList"
+      mx="auto"
+      px={4}
+      overflowY="scroll"
+    >
       {contacts.map(({ id, name, number }) => (
         <ContactItem
           key={id}
