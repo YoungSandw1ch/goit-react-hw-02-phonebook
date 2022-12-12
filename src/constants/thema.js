@@ -102,6 +102,7 @@ export const theme = {
     caps: {
       textTransform: 'uppercase',
       letterSpacing: '0.2em',
+      customLetterSpacing: '2px',
     },
     heading: {
       fontFamily: 'heading',

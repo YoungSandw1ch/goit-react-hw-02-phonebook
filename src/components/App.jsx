@@ -14,6 +14,7 @@ export class App extends Component {
       { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
+    filter: '',
   };
 
   contactFormSubmit = data => {
@@ -48,7 +49,7 @@ export class App extends Component {
           </Title>
           <ContactForm onSubmit={this.contactFormSubmit} />
 
-          <Title as="h2" mb={4} color="blue">
+          <Title as="h2" mb={4} color="blue" fontSize="ms">
             Contacts
           </Title>
           <Filter />
