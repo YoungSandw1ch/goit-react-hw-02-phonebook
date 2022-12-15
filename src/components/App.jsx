@@ -6,6 +6,7 @@ import { ContactForm } from './ContactForm';
 import { ContactList } from './ContactList';
 import { Filter } from './Filter';
 import { initialState } from 'constants';
+import { report } from 'utils';
 
 export class App extends Component {
   state = {
@@ -18,11 +19,12 @@ export class App extends Component {
     const id = nanoid();
     this.setState(prev => {
       const isContactExist = prev.contacts.reduce(
-        (acc, c) => (c.name === name ? acc + 1 : acc),
+        (acc, c) =>
+          c.name.toLowerCase() === name.toLowerCase() ? acc + 1 : acc,
         0
       );
       if (isContactExist) {
-        alert(`${name} is already in contacts`);
+        report();
         return;
       }
       return {
