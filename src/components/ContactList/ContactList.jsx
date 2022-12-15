@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Box } from 'components/Common';
-import { ContactItem } from 'components/ContactItem';
+import { ContactItem } from 'components/ContactList/ContactItem';
 
 export const ContactList = ({ contacts, onContactDelete }) => {
   return (
